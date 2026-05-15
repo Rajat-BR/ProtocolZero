@@ -1,7 +1,7 @@
 """
-main.py - FastAPI backend (SPEED OPTIMIZED)
+main.py - FastAPI backend
 Single LLM call returns full structured JSON.
-4 sequential agent calls → 1 call. ~5x faster.
+4 sequential agent calls → 1 call
 """
 
 from fastapi import FastAPI, HTTPException
@@ -79,7 +79,7 @@ def parse_llm_json(raw: str) -> dict:
 # ── Endpoints ─────────────────────────────────────────────────────────────────
 @app.get("/")
 def health_check():
-    return {"status": "ok", "message": "CI/CD Diagnosis API v2 running"}
+    return {"status": "ok", "message": "CI/CD Diagnosis API v1 running"}
 
 
 @app.post("/analyze", response_model=DiagnosisResult)
@@ -89,7 +89,7 @@ def analyze_log(input: LogInput):
     if not log:
         raise HTTPException(status_code=400, detail="Log cannot be empty.")
     if len(log) > 8000:
-        log = log[:8000]  # Trim silently instead of rejecting
+        log = log[:8000]  
 
     start = time.time()
 
