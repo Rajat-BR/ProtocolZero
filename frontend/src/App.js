@@ -383,7 +383,7 @@ export default function App() {
           <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 14, marginBottom: 18 }}>
             <div style={{ flex: 1, maxWidth: 120, height: 1, background: `linear-gradient(90deg, transparent, ${Y}60)` }} />
             <span style={{ fontSize: 9, color: Y, letterSpacing: 4, fontWeight: 700 }}>
-              HACKOASIS 2025 · AGENTIC AI DEVTOOLS
+              HACKOASIS 2026 · AGENTIC AI DEVTOOLS
             </span>
             <div style={{ flex: 1, maxWidth: 120, height: 1, background: `linear-gradient(270deg, transparent, ${Y}60)` }} />
           </div>
@@ -401,7 +401,7 @@ export default function App() {
 
           {/* Subtitle */}
           <p style={{ fontSize: 13, color: DIM, letterSpacing: 2, margin: "14px 0 0" }}>
-            AUTONOMOUS  ·  MULTI-AGENT  ·  AI-POWERED  ·  SELF-HEALING
+            AUTONOMOUS  ·  MULTI-AGENT  ·  AI-POWERED 
           </p>
 
           {/* Agent status strip */}
