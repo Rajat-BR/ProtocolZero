@@ -40,7 +40,7 @@ def classify_failure(log: str) -> str:
     prompt = CLASSIFIER_PROMPT.format(log=log)
     result = ask_llm(prompt).strip().lower()
 
-    # Safety: validate output is one of our known types
+    
     for t in SUPPORTED_TYPES:
         if t in result:
             return t
